@@ -3,7 +3,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #2B2B2B;
+    /* background-color: #2B2B2B; */
+    background-color: transparent;
+    z-index: 911;
 }
 
 .header__wrapper {
@@ -15,9 +17,9 @@
     color: #FFF;
 }
 
-.header__logo-wrapper {}
+/* .header__logo-wrapper {} */
 
-.header__logo {}
+/* .header__logo {} */
 
 .header__basket {
     position: relative;

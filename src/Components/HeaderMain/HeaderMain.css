@@ -1,0 +1,12 @@
+.header__main {
+    /* padding-top: 9rem; */
+    height: 100vh;
+    background-color: #2B2B2B;
+    position: relative;
+}
+
+.header__main-circle {
+    position: absolute;
+    opacity: .5;
+    z-index: 10;
+}
