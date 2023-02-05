@@ -4,7 +4,7 @@ import React from 'react';
 import './Header.css'
 
 // Component
-import HeaderMenu from '../shader/HeaderMenu';
+import HeaderMenu from '../HeaderMenu/HeaderMenu';
 
 // Image
 import logo from '../../assets/image/Jevelin_logo.png'
