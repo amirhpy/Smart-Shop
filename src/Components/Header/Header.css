@@ -1,0 +1,26 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #2B2B2B;
+}
+
+.header__wrapper {
+    padding: 3rem 0;
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+}
+
+.header__logo-wrapper {}
+
+.header__logo {}
+
+.header__basket > svg {
+    color: #a07eb5;
+    font-weight: 400;
+    font-size: 150%;
+    width: 10rem;
+}

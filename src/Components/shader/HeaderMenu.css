@@ -1,0 +1,14 @@
+.header__menu {
+    display: flex;
+}
+
+.header__menu-item {
+    cursor: pointer;
+    padding: 0 2rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.header__menu-item:hover {
+    color: #B3B3B3;
+}
