@@ -7,8 +7,10 @@
     padding: 0 2rem;
     font-weight: 700;
     font-size: 1.4rem;
+    transition: color 150ms ease-in;
 }
 
 .header__menu-item:hover {
     color: #B3B3B3;
+    transition: color 150ms ease-in;
 }

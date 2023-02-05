@@ -24,6 +24,7 @@ const Header = () => {
                 <HeaderMenu />
                 <div className='header__basket'>
                     <BsBasket />
+                    <span className='basket__item-counter'>0</span>
                 </div>
             </div>
         </header>

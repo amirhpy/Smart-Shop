@@ -18,9 +18,34 @@
 
 .header__logo {}
 
-.header__basket > svg {
+.header__basket {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+}
+
+.header__basket>svg {
     color: #a07eb5;
     font-weight: 400;
     font-size: 150%;
-    width: 10rem;
+    cursor: pointer;
+}
+
+.basket__item-counter {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 2px 1px rgb(0 0 0 / 15%);
+    background-color: #7d1eff;
 }

@@ -2,22 +2,6 @@
 @import './styles/grid.css';
 @import './styles/font.css';
 
-:root {
-  --woocommerce: #a46497;
-  --wc-green: #7ad03a;
-  --wc-red: #a00;
-  --wc-orange: #ffba00;
-  --wc-blue: #2ea2cc;
-  --wc-primary: #a46497;
-  --wc-primary-text: #fff;
-  --wc-secondary: #ebe9eb;
-  --wc-secondary-text: #515151;
-  --wc-highlight: #77a464;
-  --wc-highligh-text: #fff;
-  --wc-content-bg: #fff;
-  --wc-subtext: #767676;
-}
-
 /* Reset */
 
 a {
