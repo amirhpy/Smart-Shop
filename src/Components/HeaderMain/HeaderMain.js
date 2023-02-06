@@ -4,7 +4,7 @@ import React from 'react';
 import './HeaderMain.css'
 
 // Image
-import circle from '../../assets/shader/Ellipse-1.png'
+import circle from '../../assets/shader/Ellipse-2.png'
 
 const HeaderMain = () => {
     return (

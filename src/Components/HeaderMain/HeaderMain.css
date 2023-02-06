@@ -7,6 +7,9 @@
 
 .header__main-circle {
     position: absolute;
-    opacity: .5;
+    opacity: .4;
     z-index: 10;
+    width: 30%;
+    top: -15rem;
+    left: -23rem;
 }
