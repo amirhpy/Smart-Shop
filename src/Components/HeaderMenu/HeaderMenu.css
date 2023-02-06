@@ -1,10 +1,11 @@
 .header__menu {
     display: flex;
+    color: #FFF;
 }
 
 .header__menu-item {
     cursor: pointer;
-    padding: 0 2rem;
+    padding: 0 1.8rem;
     font-weight: 700;
     font-size: 1.4rem;
     transition: color 200ms ease-in;

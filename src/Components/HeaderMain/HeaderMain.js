@@ -10,7 +10,8 @@ const HeaderMain = () => {
     return (
         <div className='header__main'>
             <img src={circle} alt='shape' className='header__main-circle' />
-            <div className='container'></div>
+            <div className='container'>
+            </div>
         </div>
     );
 };

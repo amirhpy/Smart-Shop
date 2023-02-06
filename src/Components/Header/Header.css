@@ -3,13 +3,12 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    /* background-color: #2B2B2B; */
-    background-color: transparent;
-    z-index: 911;
+    z-index: 1;
+    transition: all 200ms ease-in;
+    /* padding: 4rem 0; */
 }
 
 .header__wrapper {
-    padding: 3rem 0;
     width: 93%;
     display: flex;
     justify-content: space-between;
