@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 // Component
-import HeaderMenu from '../HeaderMenu/HeaderMenu';
+import HeaderMenu from './HeaderMenu';
 
 // Image
 import logoLight from '../../assets/image/Jevelin-light.png'
