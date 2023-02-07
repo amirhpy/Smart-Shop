@@ -30,7 +30,7 @@ const Header = () => {
     }
 
     return (
-        <header className='header' style={{ backgroundColor: isScroll ? '#FFF' : 'transparent', padding: isScroll ? '2.2rem 0' : '5rem 0' }}>
+        <header className={isScroll ? 'header header-scroll' : 'header'}>
             <div className='header__wrapper'>
                 <div className='header__logo-wrapper'>
                     <a href='www.google.com'>
