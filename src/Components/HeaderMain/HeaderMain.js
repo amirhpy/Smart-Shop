@@ -1,8 +1,5 @@
 import React from 'react';
 
-// Style
-import './HeaderMain.css'
-
 // Image
 import circle from '../../assets/shader/Ellipse-2.png'
 import smartReview from '../../assets/image/smartobject.png'

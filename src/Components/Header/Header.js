@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 
-// Style
-import './Header.css'
-
 // Component
 import HeaderMenu from '../HeaderMenu/HeaderMenu';
 

@@ -1,8 +1,5 @@
 import React from 'react';
 
-// Style
-import './HeaderMenu.css'
-
 const HeaderMenu = ({ isScroll }) => {
     return (
         <ul className='header__menu' style={{ color: isScroll ? '#000' : '#FFF' }}>
