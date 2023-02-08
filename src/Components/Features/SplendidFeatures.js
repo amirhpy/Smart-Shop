@@ -12,7 +12,7 @@ import { HiOutlineDevicePhoneMobile } from 'react-icons/hi2'
 import { HiRss } from 'react-icons/hi2'
 
 const SplendidFeatures = () => {
-    const [splendidItem, setSplendidItem] = useState([
+    const [splendidItem] = useState([
         { id: 1, icon: <MdOutlineKeyboardVoice />, head: 'Voice Recognition', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris' },
         { id: 2, icon: <HiOutlineDevicePhoneMobile />, head: 'Connect with your phone', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris' },
         { id: 3, icon: <HiRss />, head: 'Any task at hand', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris' },
