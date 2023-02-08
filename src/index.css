@@ -23,7 +23,9 @@ body {
   font-size: 1.6rem;
 }
 
-/* Shared */
+/* Helper Class */
+
+/* Shared About Product */
 
 .about_product {
   margin: 0 auto;
@@ -54,6 +56,80 @@ body {
   font-size: 1.8rem;
   color: #3f3849;
   line-height: 3rem;
+}
+
+/* Shared Splendid Option */
+
+.splendid__wrapper-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.splendid__img {
+  width: 80%;
+}
+
+/* .splendid__content {} */
+
+/* .splendid__content-heading {} */
+
+.splendid__content-title {
+  text-transform: uppercase;
+}
+
+/* .splendid__content-caption {} */
+
+.splendid__option-container {
+  transition: all 200ms ease-in;
+  display: flex;
+}
+
+.splendid__option-container:nth-child(2) {
+  padding: 5rem 0;
+}
+
+.splendid__option-container:hover {
+  transition: all 200ms ease-in;
+  transform: translateX(1rem);
+}
+
+.splendid__icon-box {
+  padding-right: 3rem;
+}
+
+.splendid__icon-box>svg {
+  font-size: 2.9rem;
+  color: #7d1eff;
+}
+
+/* .splendid__option-more {} */
+
+.splendid__option-head {
+  font-family: 'Poppins-Bold';
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: #3f3849;
+  padding-bottom: .9rem;
+}
+
+.splendid__option-desc {
+  color: #8d8698;
+  line-height: 2.8rem;
+  width: 60%;
+}
+
+.smart__props {
+  display: flex;
+  flex-direction: column;
+}
+
+.smart__quality {
+  width: 80%;
+  height: .3rem;
+  margin-top: 3rem;
+  background-color: #7d1eff;
 }
 
 /* header style */
@@ -319,69 +395,10 @@ body {
   background-color: #FFF;
 }
 
-.splendidfeatures {}
+/* .splendidfeatures {} */
 
-.splendid__wrapper-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.splendid__img {
-  width: 80%;
-}
-
-.splendid__content {}
-
-.splendid__content-heading {}
-
-.splendid__content-title {
-  text-transform: uppercase;
-}
-
-.splendid__content-caption {}
-
-.splendid__option {
-  height: 566.45px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-}
-
-.splendid__option-container {
-  transition: all 200ms ease-in;
-  display: flex;
-  width: 60%;
-}
-
-.splendid__option-container:hover {
-  transition: all 200ms ease-in;
-  transform: translateX(1rem);
-}
-
-.splendid__icon-box {
-  padding-right: 3rem;
-}
-
-.splendid__icon-box>svg {
-  font-size: 2.9rem;
-  color: #7d1eff;
-}
-
-.splendid__option-more {}
-
-.splendid__option-head {
-  font-family: 'Poppins-Bold';
-  font-weight: 800;
-  font-size: 1.6rem;
-  color: #3f3849;
-  padding-bottom: .9rem;
-}
-
-.splendid__option-desc {
-  color: #8d8698;
-  line-height: 2.8rem;
+.smart__property {
+  margin-top: 15rem;
 }
 
 /* Responsive */
@@ -391,7 +408,6 @@ body {
     width: 70%;
   }
 
-  .splendid__option-container,
   .splendid__img {
     width: 100%;
   }
@@ -411,8 +427,8 @@ body {
     width: 100%;
   }
 
-  .splendid__option {
-    height: 34rem;
+  .splendid__option-desc {
+    width: 100%;
   }
 }
 
@@ -488,12 +504,12 @@ body {
     display: none;
   }
 
-  .splendid__option-container {
-    width: 65%;
-  }
-
   .splendid__option {
     height: 50rem;
+  }
+
+  .smart__property {
+    margin-top: 0;
   }
 }
 
@@ -519,8 +535,8 @@ body {
     padding: 3rem 0;
   }
 
-  .splendid__option-container {
-    width: 100%;
+  .splendid__content-caption {
+    font-size: 3.5rem;
   }
 }
 

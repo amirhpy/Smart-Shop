@@ -1,7 +1,5 @@
 import React from 'react';
 
-// React Icon
-
 const SplendidOption = ({ icon, head, desc }) => {
     return (
         <div className='splendid__option-container'>
