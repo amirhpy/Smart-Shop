@@ -106,7 +106,8 @@ body {
 /* Size sm */
 @media (min-width: 576px) {
     .container {
-        width: 540px;
+        /* width: 540px; */
+        width: 575px;
     }
 
     .col-sm-1 {
@@ -173,7 +174,8 @@ body {
 /* Size md */
 @media (min-width: 768px) {
     .container {
-        width: 720px;
+        /* width: 720px; */
+        width: 767px;
     }
 
     .col-md-1 {
@@ -240,7 +242,8 @@ body {
 /* Size lg */
 @media (min-width: 992px) {
     .container {
-        width: 960px;
+        /* width: 960px; */
+        width: 991px;
     }
 
     .col-lg-1 {

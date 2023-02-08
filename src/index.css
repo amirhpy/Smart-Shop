@@ -390,6 +390,11 @@ body {
   .about_product {
     width: 70%;
   }
+
+  .splendid__option-container,
+  .splendid__img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -404,6 +409,10 @@ body {
 
   .header__smart-img {
     width: 100%;
+  }
+
+  .splendid__option {
+    height: 34rem;
   }
 }
 
@@ -478,6 +487,14 @@ body {
   .main__circle-left {
     display: none;
   }
+
+  .splendid__option-container {
+    width: 65%;
+  }
+
+  .splendid__option {
+    height: 50rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -500,6 +517,10 @@ body {
 
   .header__main-future {
     padding: 3rem 0;
+  }
+
+  .splendid__option-container {
+    width: 100%;
   }
 }
 

@@ -20,12 +20,12 @@ const SplendidFeatures = () => {
     return (
         <div className='splendidfeatures'>
             <div className='row'>
-                <div className='col-6'>
+                <div className='col-12 col-md-6'>
                     <div className='splendid__wrapper-img'>
                         <img src={mobileWatch} alt='watch' className='splendid__img' />
                     </div>
                 </div>
-                <div className='col-6'>
+                <div className='col-12 col-md-6'>
                     <div className='splendid__content'>
                         <div className='splendid__content-heading'>
                             <p className='splendid__content-title about_heading'>meet with our</p>
