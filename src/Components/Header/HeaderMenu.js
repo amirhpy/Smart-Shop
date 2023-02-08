@@ -1,8 +1,8 @@
 import React from 'react';
 
-const HeaderMenu = ({ isScroll }) => {
+const HeaderMenu = ({ isScroll, menuOpen }) => {
     return (
-        <ul className='header__menu' style={{ color: isScroll ? '#000' : '#FFF' }}>
+        <ul className={menuOpen} style={{ color: isScroll ? '#000' : '#FFF' }}>
             <li className='header__menu-item'>Home</li>
             <li className='header__menu-item'>Gallery</li>
             <li className='header__menu-item'>Features</li>

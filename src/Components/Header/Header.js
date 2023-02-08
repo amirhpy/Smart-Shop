@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
 // Component
-import HeaderMenu from './HeaderMenu';
+// import HeaderMenu from './HeaderMenu';
+import HamburgerMenu from './HamburgerMenu';
 
 // Image
 import logoLight from '../../assets/image/Jevelin-light.png'
@@ -28,18 +29,18 @@ const Header = () => {
 
     return (
         <header className={isScroll ? 'header header-scroll' : 'header'}>
-            <div className='header__wrapper'>
+            <nav className='header__wrapper'>
                 <div className='header__logo-wrapper'>
                     <a href='www.google.com'>
                         <img src={isScroll ? logoDrak : logoLight} alt='logo' className='header__logo' />
                     </a>
                 </div>
-                <HeaderMenu isScroll={isScroll} />
+                <HamburgerMenu isScroll={isScroll} />
                 <div className='header__basket'>
                     <BsBasket />
                     <span className='basket__item-counter'>0</span>
                 </div>
-            </div>
+            </nav>
         </header>
     );
 };
