@@ -123,6 +123,8 @@ body {
 
 .basket-query {
   display: none;
+  width: auto;
+  padding-left: .5rem;
 }
 
 .header__menu {
@@ -200,7 +202,7 @@ body {
 .header__main {
   display: flex;
   align-items: center;
-  padding-top: 10rem;
+  padding-top: 13rem;
   height: 100vh;
   background-color: #2B2B2B;
   position: relative;
