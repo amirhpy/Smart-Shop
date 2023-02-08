@@ -312,6 +312,78 @@ body {
   background-color: #7d1eff !important;
 }
 
+/* features */
+
+.features {
+  padding: 15rem 0;
+  background-color: #FFF;
+}
+
+.splendidfeatures {}
+
+.splendid__wrapper-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.splendid__img {
+  width: 80%;
+}
+
+.splendid__content {}
+
+.splendid__content-heading {}
+
+.splendid__content-title {
+  text-transform: uppercase;
+}
+
+.splendid__content-caption {}
+
+.splendid__option {
+  height: 566.45px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.splendid__option-container {
+  transition: all 200ms ease-in;
+  display: flex;
+  width: 60%;
+}
+
+.splendid__option-container:hover {
+  transition: all 200ms ease-in;
+  transform: translateX(1rem);
+}
+
+.splendid__icon-box {
+  padding-right: 3rem;
+}
+
+.splendid__icon-box>svg {
+  font-size: 2.9rem;
+  color: #7d1eff;
+}
+
+.splendid__option-more {}
+
+.splendid__option-head {
+  font-family: 'Poppins-Bold';
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: #3f3849;
+  padding-bottom: .9rem;
+}
+
+.splendid__option-desc {
+  color: #8d8698;
+  line-height: 2.8rem;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 1200px) {
