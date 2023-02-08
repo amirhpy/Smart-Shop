@@ -28,7 +28,7 @@ body {
 .about_product {
   margin: 0 auto;
   text-align: center;
-  width: 37%;
+  width: 55%;
 }
 
 .about_heading {
@@ -137,7 +137,9 @@ body {
 }
 
 .header__main {
-  padding-top: 7rem;
+  display: flex;
+  align-items: center;
+  padding-top: 13rem;
   height: 100vh;
   background-color: #2B2B2B;
   position: relative;
@@ -214,18 +216,124 @@ body {
   background-color: #F4F4F4;
 }
 
-/* Responsive */
-
-@media screen and (max-width: 1200px) {}
-
-@media screen and (max-width: 992px) {}
-
-@media screen and (max-width: 768px) {}
-
-@media screen and (max-width: 576px) {
-  /* * {
-        cursor: default !important;
-    } */
+.gallery__slider {
+  position: relative;
+  margin-top: 9rem;
 }
 
-@media screen and (max-width: 380px) {}
+/* Swiper */
+
+.swiper {
+  width: 100% !important;
+  position: initial !important;
+}
+
+.swiper-wrapper {
+  width: 100% !important;
+}
+
+.swiper-slide>img {
+  width: 100% !important;
+}
+
+.swiper-pagination {
+  bottom: -2rem !important;
+  text-align: start !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #b47eff !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #7d1eff !important;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+  .about_product {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about_product {
+    width: 80%;
+  }
+
+  .header__main-title {
+    font-size: 7rem;
+    line-height: 7rem;
+  }
+
+  .header__smart-img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about_product {
+    width: 90%;
+  }
+
+  .about_title {
+    font-size: 4.3rem;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__main {
+    display: block;
+  }
+
+  .header__smart-content {
+    justify-content: center;
+  }
+
+  .header__smart-img {
+    width: 50%;
+  }
+
+  .main__circle-right,
+  .main__circle-left {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  * {
+    cursor: default !important;
+  }
+
+  .about_title {
+    line-height: 5.3rem;
+  }
+
+  .about_title {
+    font-size: 4rem;
+  }
+
+  .header__main-title {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+
+  .header__main-future {
+    padding: 3rem 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .about_title {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  .header__main-title {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}

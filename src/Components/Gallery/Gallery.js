@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Components
+import GallerySlider from './GallerySlider';
+
 // Shared
 import AboutProduct from '../shared/AboutProduct';
 
@@ -12,7 +15,7 @@ const Gallery = () => {
                 lTitle='Design and Performance'
                 more='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae odales lectus, non ultrices nisi. In varius, leo non gravida.' />
             <div className='container'>
-
+                <GallerySlider />
             </div>
         </div>
     );
