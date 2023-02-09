@@ -407,7 +407,7 @@ body {
   padding: 15rem 0;
 }
 
-.image__introduction-heading {}
+/* .image__introduction-heading {} */
 
 .image__introduction-heading .about_product {
   margin: 0;
@@ -529,12 +529,8 @@ body {
     display: none;
   }
 
-  .splendid__option {
-    height: 50rem;
-  }
-
   .smart__property {
-    margin-top: 0;
+    margin-top: 5rem;
   }
 }
 
