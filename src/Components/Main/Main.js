@@ -5,6 +5,7 @@ import HeaderMain from '../Header/HeaderMain';
 import Gallery from '../Gallery/Gallery';
 import Features from '../Features/Features';
 import ImageIntroduction from '../ImageIntroduction/ImageIntroduction';
+import Review from '../ReviewProduct/Review';
 
 const Main = () => {
     return (
@@ -13,6 +14,7 @@ const Main = () => {
             <Gallery />
             <Features />
             <ImageIntroduction />
+            <Review />
         </main>
     );
 };
