@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AboutProduct = ({ heading,fTitle, lTitle, more }) => {
+const AboutProduct = ({ heading, fTitle, lTitle, more }) => {
     return (
         <div className='about_product'>
             <h3 className='about_heading'>{heading}</h3>

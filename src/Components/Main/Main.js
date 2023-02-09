@@ -4,6 +4,7 @@ import React from 'react';
 import HeaderMain from '../Header/HeaderMain';
 import Gallery from '../Gallery/Gallery';
 import Features from '../Features/Features';
+import ImageIntroduction from '../ImageIntroduction/ImageIntroduction';
 
 const Main = () => {
     return (
@@ -11,6 +12,7 @@ const Main = () => {
             <HeaderMain />
             <Gallery />
             <Features />
+            <ImageIntroduction />
         </main>
     );
 };

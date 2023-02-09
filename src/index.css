@@ -29,7 +29,6 @@ body {
 
 .about_product {
   margin: 0 auto;
-  text-align: center;
   width: 55%;
 }
 
@@ -401,6 +400,28 @@ body {
   margin-top: 15rem;
 }
 
+/* Image Introduction */
+
+.image__introduction {
+  background-color: #F4F4F4;
+  padding: 15rem 0;
+}
+
+.image__introduction-heading {}
+
+.image__introduction-heading .about_product {
+  margin: 0;
+}
+
+.image__introduction-body {
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.introduction__img {
+  width: 100%;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 1200px) {
@@ -425,6 +446,10 @@ body {
 
   .header__smart-img {
     width: 100%;
+  }
+
+  .splendid__option-container:nth-child(2) {
+    padding: 3rem 0;
   }
 
   .splendid__option-desc {
@@ -472,7 +497,7 @@ body {
   }
 
   .about_product {
-    width: 90%;
+    width: 100%;
   }
 
   .about_title {
@@ -519,11 +544,8 @@ body {
   }
 
   .about_title {
-    line-height: 5.3rem;
-  }
-
-  .about_title {
     font-size: 4rem;
+    line-height: 5.3rem;
   }
 
   .header__main-title {
@@ -533,6 +555,11 @@ body {
 
   .header__main-future {
     padding: 3rem 0;
+  }
+
+  .splendid__option-container:hover {
+    transition: none;
+    transform: none;
   }
 
   .splendid__content-caption {

@@ -106,8 +106,7 @@ body {
 /* Size sm */
 @media (min-width: 576px) {
     .container {
-        /* width: 540px; */
-        width: 575px;
+        width: 540px;
     }
 
     .col-sm-1 {
@@ -174,8 +173,7 @@ body {
 /* Size md */
 @media (min-width: 768px) {
     .container {
-        /* width: 720px; */
-        width: 767px;
+        width: 720px;
     }
 
     .col-md-1 {
@@ -242,8 +240,7 @@ body {
 /* Size lg */
 @media (min-width: 992px) {
     .container {
-        /* width: 960px; */
-        width: 991px;
+        width: 960px;
     }
 
     .col-lg-1 {
@@ -310,8 +307,7 @@ body {
 /* Size xl */
 @media (min-width: 1200px) {
     .container {
-        /* width: 1140px; */
-        width: 1199px;
+        width: 1140px;
     }
 
     .col-xl-1 {
