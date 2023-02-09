@@ -8,9 +8,9 @@ import SmartOption from '../shared/SmartOption';
 
 const SmartProperty = () => {
     const [smartAbbility] = useState([
-        { id: 1, head: '+ Increased storage', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris',},
-        { id: 2, head: '+ Battery life', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris', },
-        { id: 3, head: '+ Display surface', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris',}
+        { id: 1, head: '+ Increased storage', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris', quality: 30},
+        { id: 2, head: '+ Battery life', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris', quality: 80},
+        { id: 3, head: '+ Display surface', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris',quality: 60}
     ])
     return (
         <div className='smart__property'>
@@ -22,7 +22,7 @@ const SmartProperty = () => {
                             <h2 className='splendid__content-caption about_title'>Best Experience</h2>
                         </div>
                         <div className='splendid__option'>
-                            {smartAbbility.map(item => <SmartOption key={item.id} head={item.head} desc={item.desc} />)}
+                            {smartAbbility.map(item => <SmartOption key={item.id} head={item.head} desc={item.desc} quality={item.quality} />)}
                         </div>
                     </div>
                 </div>
