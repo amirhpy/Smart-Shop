@@ -266,11 +266,11 @@ body {
 }
 
 .clicked .nav_toggle-line::before {
-  transform: translateY(-1rem) rotate(-45deg);
+  transform: translateY(-.8rem) rotate(-45deg);
 }
 
 .clicked .nav_toggle-line::after {
-  transform: translateY(1rem) rotate(45deg);
+  transform: translateY(.8rem) rotate(45deg);
 }
 
 /* Hamburger Menu */
