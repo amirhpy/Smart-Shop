@@ -245,7 +245,7 @@ body {
 .nav_toggle-line::after {
   content: ' ';
   border-radius: 2rem;
-  width: 4rem;
+  width: 3rem;
   height: .4rem;
   transition: all 120ms ease-in;
   background-color: #7d1eff;
@@ -253,12 +253,12 @@ body {
 
 .nav_toggle-line::before {
   position: absolute;
-  top: 1rem;
+  top: .8rem;
 }
 
 .nav_toggle-line::after {
   position: absolute;
-  bottom: 1rem;
+  bottom: .8rem;
 }
 
 .clicked .nav_toggle-line {
