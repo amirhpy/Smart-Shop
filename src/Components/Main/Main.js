@@ -6,6 +6,7 @@ import Gallery from '../Gallery/Gallery';
 import Features from '../Features/Features';
 import ImageIntroduction from '../ImageIntroduction/ImageIntroduction';
 import Review from '../ReviewProduct/Review';
+import Developers from '../DeveloperC/Developers';
 
 const Main = () => {
     return (
@@ -15,6 +16,7 @@ const Main = () => {
             <Features />
             <ImageIntroduction />
             <Review />
+            <Developers />
         </main>
     );
 };
