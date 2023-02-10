@@ -443,8 +443,6 @@ body {
 }
 
 .review__product-container {
-  display: flex;
-  justify-content: space-between;
   margin-top: 7rem;
 }
 
@@ -493,7 +491,7 @@ body {
 }
 
 .golden-sunset {
-  color: #cea9ff;
+  color: #f3b560;
 }
 
 /* Responsive */
