@@ -494,6 +494,12 @@ body {
   color: #f3b560;
 }
 
+/* Developer */
+
+.developer {
+  padding: 15rem;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 1200px) {
