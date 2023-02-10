@@ -494,10 +494,60 @@ body {
   color: #f3b560;
 }
 
-/* Developer */
+/* Customers Say */
 
-.developer {
-  padding: 15rem;
+.customers {
+  background-color: #F4F4F4;
+  padding: 15rem 0;
+}
+
+.customers__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.customers__say {
+  text-align: center;
+  padding: 0;
+  margin-bottom: 7rem;
+}
+
+.customers__slider {
+  position: relative;
+  text-align: center;
+  width: 50%;
+}
+
+.customers__img-container {
+  margin: 0 auto;
+  width: 9.2rem;
+  height: 9.2rem;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgb(0 0 0 / 5%), 0 5px 20px rgb(0 0 0 / 5%);
+}
+
+.customers__img {
+  border-radius: 50%;
+}
+
+.customers__body,
+.customers__score {
+  color: #8d8698;
+  line-height: 2.8rem;
+  font-size: 1.8rem;
+}
+
+.customers__comment {
+  margin: 2rem 0;
+}
+
+.customers__name {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #7d1eff;
+  margin-bottom: 1rem;
 }
 
 /* Responsive */
@@ -532,6 +582,10 @@ body {
 
   .splendid__option-desc {
     width: 100%;
+  }
+
+  .customers__slider {
+    width: 90%;
   }
 }
 
