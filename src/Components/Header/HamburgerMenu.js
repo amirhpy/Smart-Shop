@@ -28,9 +28,6 @@ const HamburgerMenu = ({ isScroll }) => {
     return (
         <>
             <HeaderMenu menuOpen={menuOpen} isScroll={isScroll} />
-            {/* <div className={hamburgerMenu} onClick={openMenuHandler}>
-                <div className='nav_toggle-line'></div>
-            </div> */}
             <div className='nav_line-basket'>
                 <div className={hamburgerMenu} onClick={openMenuHandler}>
                     <div className='nav_toggle-line'></div>

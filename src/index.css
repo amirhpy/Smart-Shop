@@ -561,7 +561,9 @@ body {
 
 /* .footer__payment-container {} */
 
-/* .footer__logo {} */
+.footer__logo {
+  cursor: pointer;
+}
 
 .footer__desc {
   margin: 2rem 0 3rem 0;
@@ -577,6 +579,7 @@ body {
 }
 
 .footer__carts>svg {
+  cursor: pointer;
   width: 3.4rem;
   font-size: 2.4rem;
   color: #000;
@@ -607,6 +610,12 @@ body {
   font-size: 1.6rem;
   color: #a1a1a1;
   line-height: 2.8rem;
+}
+
+.footer__company-caption,
+.footer__company-name,
+.footer__copyright {
+  cursor: pointer;
 }
 
 .footer__copyright {

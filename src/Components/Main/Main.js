@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Component
-import HeaderMain from '../Header/HeaderMain';
+import HeaderMain from '../HeaderMain/HeaderMain';
 import Gallery from '../Gallery/Gallery';
 import Features from '../Features/Features';
 import ImageIntroduction from '../ImageIntroduction/ImageIntroduction';
