@@ -1,20 +1,19 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { useRoutes } from 'react-router-dom';
 
 // Component
 import Header from './Components/Header/Header'
-import Main from './Components/Main/Main';
 import Footer from './Components/Footer/Footer'
-import Shop from './Pages/Shop'
+
+// Routes
+import routes from './routes';
 
 function App() {
+    let router = useRoutes(routes)
     return (
         <>
             <Header />
-            <Routes>
-                <Route path='/' element={<Main />} />
-                <Route path='/shop' element={<Shop />} />
-            </Routes>
+            {router}
             <Footer />
         </>
     );
