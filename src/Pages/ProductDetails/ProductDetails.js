@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 
 // Function
 import allProducts from '../Shop/allProduct';
@@ -17,50 +17,63 @@ const ProductDetails = () => {
     const [allProduct] = useState(allProducts)
     let mainProduct = allProduct.find(prod => prod.id === Number(params.productID))
 
+    let hasProd = allProduct.some(prod => prod.id === Number(params.productID))
+    console.log(hasProd)
+
     return (
-        <div className='product-details'>
-            <PaginationShop />
-            <div className='container'>
-                <div className='main__product'>
-                    <div className='row'>
-                        <div className='col-12 col-lg-6'>
-                            <div className='main-prod__imgcontainer'>
-                                <img src={mainProduct.img} alt='smart' className='main-prod__img' />
-                            </div>
-                        </div>
-                        <div className='col-12 col-lg-6'>
-                            <div className='main-prod__body'>
-                                <h2 className='main-prod__name'>{mainProduct.name}</h2>
-                                <h3 className='main-prod__price'>£{mainProduct.price}</h3>
-                                <p className='main-prod__desc'>
-                                    Aenean egestas ante non ullamcorper rutrum. Donec fermentum mi nec massa tempor vehicula. Nulla nec porta lorem, laoreet congue lectus. Nullam commodo nisl in elit posuere, eget pulvinar nisl fringilla.
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum velit id eros finibus luctus.
-                                </p>
-                                <div className='main-prod__basket'>
-                                    <div className='main-prod__counter'>
-                                        <div className='counter-up'>
-                                            <RxArrowUp />
-                                        </div>
-                                        <p className='counter-show'>{mainProduct.count}</p>
-                                        <div className='counter-down'>
-                                            <RxArrowDown />
+        <>
+            {
+                !hasProd ? (
+                    <Navigate to='/shop' />
+                ) : (
+                    <div className='product-details'>
+                        <PaginationShop />
+                        <div className='container'>
+                            <div className='main__product'>
+                                <div className='row'>
+                                    <div className='col-12 col-lg-6'>
+                                        <div className='main-prod__imgcontainer'>
+                                            <img src={mainProduct.img} alt='smart' className='main-prod__img' />
                                         </div>
                                     </div>
-                                    <div className='main-prod__button'>
-                                        <BsBasket />
-                                        <p>Add To Cart</p>
+                                    <div className='col-12 col-lg-6'>
+                                        <div className='main-prod__body'>
+                                            <h2 className='main-prod__name'>{mainProduct.name}</h2>
+                                            <h3 className='main-prod__price'>£{mainProduct.price}</h3>
+                                            <p className='main-prod__desc'>
+                                                Aenean egestas ante non ullamcorper rutrum. Donec fermentum mi nec massa tempor vehicula. Nulla nec porta lorem, laoreet congue lectus. Nullam commodo nisl in elit posuere, eget pulvinar nisl fringilla.
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum velit id eros finibus luctus.
+                                            </p>
+                                            <div className='main-prod__basket'>
+                                                <div className='main-prod__counter'>
+                                                    <div className='counter-up'>
+                                                        <RxArrowUp />
+                                                    </div>
+                                                    <p className='counter-show'>{mainProduct.count}</p>
+                                                    <div className='counter-down'>
+                                                        <RxArrowDown />
+                                                    </div>
+                                                </div>
+                                                <div className='main-prod__button'>
+                                                    <BsBasket />
+                                                    <p>Add To Cart</p>
+                                                </div>
+                                            </div>
+                                            <div style={{ display: 'flex', alignItems: 'flex-end' }}>
+                                                <h3 className='main-prod__category'>Category :</h3>
+                                                <p className='shop__product-info pb-0'>{mainProduct.info}</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div style={{ display: 'flex', alignItems: 'flex-end' }}>
-                                    <h3 className='main-prod__category'>Category :</h3>
-                                    <p className='shop__product-info pb-0'>{mainProduct.info}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                )
+            }
+
+        </>
+
     );
 };
 
