@@ -633,15 +633,6 @@ body {
 
 /* Shop Component */
 
-.shop .header {
-  padding: 2.2rem;
-  background-color: #363636;
-}
-
-.shop .header-scroll {
-  background-color: #fff;
-}
-
 .shop__pagination {
   display: flex;
   align-items: center;
@@ -649,7 +640,7 @@ body {
   flex-direction: column;
   background-color: #363636;
   height: 20rem;
-  padding-top: 7.4rem;
+  padding-top: 9rem;
   border-radius: 0 0 2rem 2rem;
 }
 
@@ -741,6 +732,19 @@ body {
 }
 
 /* .shop__product-price {} */
+
+/* Product Details */
+
+.product-details {}
+
+.main__product {
+  padding: 7.5rem 0;
+}
+
+.mainprod__img-container,
+.mainprod__img {
+  width: 100%;
+}
 
 /* Responsive */
 
