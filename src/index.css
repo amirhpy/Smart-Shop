@@ -26,6 +26,11 @@ body {
 
 /* Helper Class */
 
+.ps-1 {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
 /* Shared About Product */
 
 .about_product {
@@ -626,6 +631,117 @@ body {
   text-align: center;
 }
 
+/* Shop Component */
+
+.shop .header {
+  padding: 2.2rem;
+  background-color: #363636;
+}
+
+.shop .header-scroll {
+  background-color: #fff;
+}
+
+.shop__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #363636;
+  height: 20rem;
+  padding-top: 7.4rem;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.shop__heading {
+  font-family: 'Poppins-SemiBold';
+  font-weight: 800;
+  color: #FFF;
+  font-size: 2.4rem;
+}
+
+.shop__links {
+  padding: 1rem 0;
+  width: 80%;
+  color: #fff;
+  display: flex;
+  font-weight: 900;
+  font-size: 1.3rem;
+  justify-content: flex-end;
+}
+
+.shop__product {
+  padding: 7.5rem 0;
+}
+
+.shop__product-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.shop__product-pic,
+.shop__product-img {
+  width: 100%;
+}
+
+/* .shop__product-img {} */
+
+/* .shop__product-body {} */
+
+.shop__product-name,
+.shop__product-price {
+  padding: 1.8rem 0;
+  color: #3f3849;
+  font-family: 'Poppins-Bold';
+  font-weight: 800;
+}
+
+.shop__product-info {
+  font-size: 1.3rem;
+  padding-bottom: 1.8rem;
+  text-transform: uppercase;
+  color: #8d8698;
+}
+
+.shop__icon-container {
+  display: flex;
+  position: relative;
+}
+
+.shop__border {
+  width: 77%;
+  height: 0.1rem;
+  background-color: #e9e9e9;
+}
+
+.shop__basket-parent {
+  bottom: -2rem;
+  right: 0;
+  position: absolute;
+  cursor: pointer;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  color: #8d8d8d;
+  transition: all 200ms ease-in;
+}
+
+.shop__basket-parent:hover {
+  transition: all 200ms ease-in;
+  background-color: #7d1eff;
+  color: #fff;
+}
+
+.shop__basket-icon {
+  position: absolute;
+  display: block;
+}
+
+/* .shop__product-price {} */
+
 /* Responsive */
 
 @media screen and (max-width: 1200px) {
@@ -768,6 +884,10 @@ body {
 
   .splendid__content-caption {
     font-size: 3.5rem;
+  }
+
+  .shop__border {
+    width: 88%;
   }
 }
 

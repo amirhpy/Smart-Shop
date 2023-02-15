@@ -1,6 +1,7 @@
 import React from 'react';
 
 // Component
+import Header from '../Header/Header';
 import HeaderMain from '../HeaderMain/HeaderMain';
 import Gallery from '../Gallery/Gallery';
 import Features from '../Features/Features';
@@ -11,6 +12,7 @@ import CustomersSay from '../CustomersSay/CustomersSay';
 const Main = () => {
     return (
         <main className='main'>
+            <Header />
             <HeaderMain />
             <Gallery />
             <Features />

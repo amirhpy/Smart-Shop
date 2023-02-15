@@ -2,7 +2,7 @@ import React from 'react';
 import { useRoutes } from 'react-router-dom';
 
 // Component
-import Header from './Components/Header/Header'
+// import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
 
 // Routes
@@ -12,7 +12,7 @@ function App() {
     let router = useRoutes(routes)
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             {router}
             <Footer />
         </>
