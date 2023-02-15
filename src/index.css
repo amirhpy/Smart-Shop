@@ -31,6 +31,10 @@ body {
   padding-left: 1rem;
 }
 
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
 /* Shared About Product */
 
 .about_product {
@@ -645,8 +649,7 @@ body {
 }
 
 .shop__heading {
-  font-family: 'Poppins-SemiBold';
-  font-weight: 800;
+  letter-spacing: .7rem;
   color: #FFF;
   font-size: 2.4rem;
 }
@@ -673,6 +676,7 @@ body {
 .shop__product-pic,
 .shop__product-img {
   width: 100%;
+  border-radius: 2rem;
 }
 
 /* .shop__product-img {} */
@@ -709,6 +713,11 @@ body {
   bottom: -2rem;
   right: 0;
   position: absolute;
+}
+
+.shop__basket-parent,
+.counter-up,
+.counter-down {
   cursor: pointer;
   padding: 2rem;
   display: flex;
@@ -718,9 +727,12 @@ body {
   background-color: #f2f2f2;
   color: #8d8d8d;
   transition: all 200ms ease-in;
+
 }
 
-.shop__basket-parent:hover {
+.shop__basket-parent:hover,
+.counter-up:hover,
+.counter-down:hover {
   transition: all 200ms ease-in;
   background-color: #7d1eff;
   color: #fff;
@@ -741,9 +753,81 @@ body {
   padding: 7.5rem 0;
 }
 
-.mainprod__img-container,
-.mainprod__img {
+.main-prod__imgcontainer,
+.main-prod__img {
   width: 100%;
+  border-radius: 2rem;
+}
+
+.main-prod__body {
+  width: 100%;
+}
+
+.main-prod__name {
+  color: #3f3849;
+  font-weight: 800;
+  font-size: 3rem;
+  font-family: 'Poppins-Bold';
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 2rem;
+}
+
+.main-prod__price {
+  font-size: 2.4rem;
+  color: #3f3849;
+  font-family: 'Poppins-Bold';
+  font-weight: 700;
+  padding: 2rem 0;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.main-prod__desc {
+  padding: 2rem 0;
+  line-height: 2.8rem;
+  color: #8d8698;
+}
+
+.main-prod__basket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.main-prod__counter {
+  display: flex;
+  align-items: center;
+}
+
+/* .counter-up {} */
+
+.counter-show {
+  margin: 0 1.5rem;
+  font-family: 'Poppins-Bold';
+  color: #8d8d8d;
+}
+
+/* .counter-down {} */
+
+.main-prod__button {
+  padding: 1.7rem;
+  font-family: 'Poppins-SemiBold';
+  border-radius: 6rem;
+  background-color: #7d1eff;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.main-prod__button>p {
+  padding-left: 1rem;
+}
+
+.main-prod__category {
+  font-family: 'Poppins-Bold';
+  color: #3f3849;
+  padding-right: 0.5rem;
 }
 
 /* Responsive */
