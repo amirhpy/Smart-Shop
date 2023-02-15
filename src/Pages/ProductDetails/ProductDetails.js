@@ -10,8 +10,8 @@ import PaginationShop from '../../Components/shared/PaginationShop';
 const ProductDetails = () => {
     let params = useParams()
     const [allProduct] = useState(allProducts)
-    let mainProduct = allProduct.find(prod => prod.id == params.productID)
-
+    let mainProduct = allProduct.find(prod => prod.id === Number(params.productID))
+    
     return (
         <div className='product-details'>
             <PaginationShop />
