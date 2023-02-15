@@ -2,16 +2,15 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 // Function
-import AllProducts from '../Shop/AllProduct';
+import allProducts from '../Shop/allProduct';
 
 // Components
 import PaginationShop from '../../Components/shared/PaginationShop';
 
 const ProductDetails = () => {
     let params = useParams()
-    const [allProduct] = useState(AllProducts)
+    const [allProduct] = useState(allProducts)
     let mainProduct = allProduct.find(prod => prod.id == params.productID)
-    console.log(mainProduct)
 
     return (
         <div className='product-details'>

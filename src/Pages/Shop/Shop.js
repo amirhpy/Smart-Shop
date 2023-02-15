@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
 // Function
-import AllProducts from './AllProduct';
+import allProducts from './allProduct';
 
 // Components
 import PaginationShop from '../../Components/shared/PaginationShop';
 import Products from './Products';
 
 const Shop = () => {
-    const [allProduct] = useState(AllProducts)
+    const [allProduct] = useState(allProducts)
     return (
         <div className='shop'>
             <PaginationShop />
