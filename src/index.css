@@ -638,30 +638,9 @@ body {
 /* Shop Component */
 
 .shop__pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #363636;
-  height: 20rem;
-  padding-top: 9rem;
-  border-radius: 0 0 2rem 2rem;
-}
-
-.shop__heading {
-  letter-spacing: .7rem;
-  color: #FFF;
-  font-size: 2.4rem;
-}
-
-.shop__links {
-  padding: 1rem 0;
-  width: 80%;
-  color: #fff;
-  display: flex;
-  font-weight: 900;
-  font-size: 1.3rem;
-  justify-content: flex-end;
+  height: 22rem;
+  background-image: url(./assets/image/smart-2.jpg);
+  background-position: center center;
 }
 
 .shop__product {
@@ -976,6 +955,10 @@ body {
 
   .shop__border {
     width: 88%;
+  }
+
+  .shop__pagination {
+    border-radius: 0;
   }
 }
 
