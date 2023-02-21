@@ -2,7 +2,7 @@ import React, { useState, useEffect, createContext } from 'react';
 
 import { getProducts } from '../services/api';
 
-const productContent = createContext()
+export const productContext = createContext()
 
 const ProductContextProvider = ({ children }) => {
     const [allProducts, setAllProducts] = useState([])
@@ -16,10 +16,12 @@ const ProductContextProvider = ({ children }) => {
     }, [])
 
     return (
-        <productContent.Provider value={allProducts}>
+        <productContext.Provider value={allProducts}>
             {children}
-        </productContent.Provider>
+        </productContext.Provider>
     );
 };
 
 export default ProductContextProvider;
+
+// Video UseContext E-14 Important
