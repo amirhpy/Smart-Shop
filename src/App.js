@@ -2,7 +2,8 @@ import React from 'react';
 import { useRoutes } from 'react-router-dom';
 
 // Context
-import ProductContextProvider from './Contexts/ProductContextProvider';
+import AllProductsContextProvider from './Contexts/AllProductsContextProvider';
+import CartContextProvider from './Contexts/CartContextProvider'
 
 // Component
 import Header from './Components/Header/Header'
@@ -14,11 +15,14 @@ import routes from './routes';
 function App() {
     let router = useRoutes(routes)
     return (
-        <ProductContextProvider>
-            <Header />
-            {router}
-            <Footer />
-        </ProductContextProvider>
+        <AllProductsContextProvider>
+            <CartContextProvider>
+                <Header />
+                {router}
+                <Footer />
+            </CartContextProvider>
+        </AllProductsContextProvider>
+
     );
 }
 

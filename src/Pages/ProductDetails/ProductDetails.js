@@ -1,11 +1,9 @@
 import React, { useContext } from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 
-// Function
-// import allProducts from '../Shop/allProduct';
-
 // Context
-import { productContext } from '../../Contexts/ProductContextProvider';
+import { allProductsContext } from '../../Contexts/AllProductsContextProvider';
+import { cartContext } from '../../Contexts/CartContextProvider'
 
 // Components
 import PaginationShop from '../../Components/shared/PaginationShop';
@@ -17,12 +15,12 @@ import { BsBasket } from 'react-icons/bs'
 
 const ProductDetails = (props) => {
     let params = useParams()
-    // const [allProduct] = useState(allProducts)
 
-    const productAPI = useContext(productContext)
+    const allProductsData = useContext(allProductsContext)
+    const { state, dispatch } = useContext(cartContext)
 
-    let mainProduct = productAPI.find(prod => prod[0] === params.productID)
-    let hasProd = productAPI.some(prod => prod[0] === params.productID)
+    let mainProduct = allProductsData.find(product => product.id === Number(params.productID))
+    let hasProd = allProductsData.some(product => product.id === Number(params.productID))
 
     return (
         <>
@@ -37,13 +35,13 @@ const ProductDetails = (props) => {
                                 <div className='row'>
                                     <div className='col-12 col-lg-6'>
                                         <div className='main-prod__imgcontainer'>
-                                            <img src={mainProduct[1].data.img} alt='smart' className='main-prod__img' />
+                                            <img src={mainProduct.img} alt='smart' className='main-prod__img' />
                                         </div>
                                     </div>
                                     <div className='col-12 col-lg-6'>
                                         <div className='main-prod__body'>
-                                            <h2 className='main-prod__name'>{mainProduct[1].data.name}</h2>
-                                            <h3 className='main-prod__price'>£{mainProduct[1].data.price}</h3>
+                                            <h2 className='main-prod__name'>{mainProduct.name}</h2>
+                                            <h3 className='main-prod__price'>£{mainProduct.price}</h3>
                                             <p className='main-prod__desc'>
                                                 Aenean egestas ante non ullamcorper rutrum. Donec fermentum mi nec massa tempor vehicula. Nulla nec porta lorem, laoreet congue lectus. Nullam commodo nisl in elit posuere, eget pulvinar nisl fringilla.
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum velit id eros finibus luctus.
@@ -51,21 +49,21 @@ const ProductDetails = (props) => {
                                             <div className='main-prod__basket'>
                                                 <div className='main-prod__counter'>
                                                     <div className='counter-up'>
-                                                        <RxArrowUp />
+                                                        <RxArrowUp onClick={() => dispatch({ type: 'INCREASE', payload: mainProduct })} />
                                                     </div>
-                                                    <p className='counter-show'>{mainProduct[1].data.count}</p>
+                                                    <p className='counter-show'>1</p>
                                                     <div className='counter-down'>
                                                         <RxArrowDown />
                                                     </div>
                                                 </div>
-                                                <div className='main-prod__button'>
+                                                <div className='main-prod__button' onClick={() => dispatch({ type: 'ADD_ITEM', payload: mainProduct})}>
                                                     <BsBasket />
                                                     <p>Add To Cart</p>
                                                 </div>
                                             </div>
                                             <div style={{ display: 'flex', alignItems: 'flex-end' }}>
                                                 <h3 className='main-prod__category'>Category :</h3>
-                                                <p className='shop__product-info pb-0'>{mainProduct[1].data.category}</p>
+                                                <p className='shop__product-info pb-0'>{mainProduct.category}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -79,7 +77,6 @@ const ProductDetails = (props) => {
 
 
         </>
-
     );
 };
 

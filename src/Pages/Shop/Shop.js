@@ -1,19 +1,14 @@
 import React, { useContext } from 'react';
 
-// Function
-// import allProducts from './allProduct';
-
 // Context
-import { productContext } from '../../Contexts/ProductContextProvider';
+import { allProductsContext } from '../../Contexts/AllProductsContextProvider';
 
 // Components
 import PaginationShop from '../../Components/shared/PaginationShop';
 import Products from './Products';
 
 const Shop = () => {
-    // const [allProduct] = useState(allProducts)
-
-    const productsAPI = useContext(productContext)
+    const allProductsData = useContext(allProductsContext)
 
     return (
         <div className='shop'>
@@ -21,8 +16,7 @@ const Shop = () => {
             <div className='container'>
                 <div className='shop__product'>
                     <div className='row'>
-                        {/* {allProduct.map(prod => <Products key={prod.id} {...prod} />)} */}
-                        {productsAPI.map(prod => <Products key={prod[0]} {...prod} />)}
+                        {allProductsData.map(product => <Products key={product.id} {...product} />)}
                     </div>
                 </div>
             </div>
