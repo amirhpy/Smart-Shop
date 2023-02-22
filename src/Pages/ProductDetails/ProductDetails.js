@@ -13,6 +13,9 @@ import { RxArrowUp } from 'react-icons/rx'
 import { RxArrowDown } from 'react-icons/rx'
 import { BsBasket } from 'react-icons/bs'
 
+// Function
+import { isInCart, quantityCount } from '../../function/helper';
+
 const ProductDetails = (props) => {
     let params = useParams()
 
@@ -48,15 +51,30 @@ const ProductDetails = (props) => {
                                             </p>
                                             <div className='main-prod__basket'>
                                                 <div className='main-prod__counter'>
-                                                    <div className='counter-up'>
-                                                        <RxArrowUp onClick={() => dispatch({ type: 'INCREASE', payload: mainProduct })} />
-                                                    </div>
-                                                    <p className='counter-show'>1</p>
-                                                    <div className='counter-down'>
-                                                        <RxArrowDown />
-                                                    </div>
+                                                    {
+                                                        isInCart(state, mainProduct.id) ?
+                                                            <div className='counter-up' onClick={() => dispatch({ type: 'INCREASE', payload: mainProduct })}>
+                                                                <RxArrowUp />
+                                                            </div>
+                                                            :
+                                                            <div className='counter-up' onClick={() => dispatch({ type: 'ADD_ITEM', payload: mainProduct })}>
+                                                                <RxArrowUp />
+                                                            </div>
+
+                                                    }
+                                                    <p className='counter-show'>{state.itemsCounter}</p>
+                                                    {
+                                                        quantityCount(state, mainProduct.id) ?
+                                                            <div className='counter-down' onClick={() => dispatch({ type: 'DECREASE', payload: mainProduct })}>
+                                                                <RxArrowDown />
+                                                            </div>
+                                                            :
+                                                            <div className='counter-down' onClick={() => dispatch({ type: 'REMOVE_ITEM', payload: mainProduct })}>
+                                                                <RxArrowDown />
+                                                            </div>
+                                                    }
                                                 </div>
-                                                <div className='main-prod__button' onClick={() => dispatch({ type: 'ADD_ITEM', payload: mainProduct})}>
+                                                <div className='main-prod__button' onClick={() => dispatch({ type: 'ADD_ITEM', payload: mainProduct })}>
                                                     <BsBasket />
                                                     <p>Add To Cart</p>
                                                 </div>

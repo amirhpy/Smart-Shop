@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+
+// Context
+import { cartContext } from '../../Contexts/CartContextProvider';
 
 // Component
-// import HeaderMenu from './HeaderMenu';
 import HamburgerMenu from './HamburgerMenu';
 
 // Image
@@ -12,6 +14,8 @@ import logoDrak from '../../assets/image/Jevelin-dark.png'
 import { BsBasket } from 'react-icons/bs'
 
 const Header = () => {
+
+    const { state } = useContext(cartContext)
 
     const [isScroll, setIsScroll] = useState(false)
 
@@ -38,7 +42,7 @@ const Header = () => {
                 <HamburgerMenu isScroll={isScroll} />
                 <div className='header__basket'>
                     <BsBasket />
-                    <span className='basket__item-counter'>0</span>
+                    <span className='basket__item-counter'>{state.itemsCounter}</span>
                 </div>
             </nav>
         </header>

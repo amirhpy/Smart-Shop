@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+
+// Context
+import { cartContext } from '../../Contexts/CartContextProvider';
 
 // React Icon
 import { BsBasket } from 'react-icons/bs'
@@ -8,6 +11,8 @@ import { BsBasket } from 'react-icons/bs'
 import HeaderMenu from './HeaderMenu';
 
 const HamburgerMenu = ({ isScroll }) => {
+
+    const { state } = useContext(cartContext)
 
     const [hamburgerMenu, setHamburgerMenu] = useState('nav__toggle-icon unclicked')
     const [menuOpen, setMenuOpen] = useState('header__menu')
@@ -34,7 +39,7 @@ const HamburgerMenu = ({ isScroll }) => {
                 </div>
                 <div className='basket-query'>
                     <BsBasket />
-                    <span className='basket-counter-query'>0</span>
+                    <span className='basket-counter-query'>{state.itemsCounter}</span>
                 </div>
             </div>
         </>

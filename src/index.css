@@ -638,9 +638,8 @@ body {
 /* Shop Component */
 
 .shop__pagination {
-  height: 22rem;
-  background-image: url(./assets/image/smart-2.jpg);
-  background-position: center center;
+  background-color: #232323;
+  height: 9rem;
 }
 
 .shop__product {
@@ -782,6 +781,7 @@ body {
 
 .counter-show {
   margin: 0 1.5rem;
+  user-select: none;
   font-family: 'Poppins-Bold';
   color: #8d8d8d;
 }
@@ -789,14 +789,43 @@ body {
 /* .counter-down {} */
 
 .main-prod__button {
+  border: 2px solid #7d1eff;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  color: #7d1eff;
   padding: 1.7rem;
   font-family: 'Poppins-SemiBold';
-  border-radius: 6rem;
-  background-color: #7d1eff;
+  border-radius: 2rem;
   display: flex;
   align-items: center;
-  color: #fff;
   cursor: pointer;
+}
+
+.main-prod__button::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #7d1eff;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.main-prod__button:hover::before {
+  width: 105%;
+}
+
+.main-prod__button:hover {
+  color: #fff;
 }
 
 .main-prod__button>p {
