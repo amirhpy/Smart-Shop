@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // Context
 import { cartContext } from '../../Contexts/CartContextProvider';
@@ -40,10 +41,13 @@ const Header = () => {
                     </a>
                 </div>
                 <HamburgerMenu isScroll={isScroll} />
-                <div className='header__basket'>
-                    <BsBasket />
-                    <span className='basket__item-counter'>{state.itemsCounter}</span>
-                </div>
+                <Link to='/carts'>
+                    <div className='header__basket'>
+                        <BsBasket />
+                        <span className='basket__item-counter'>{state.itemsCounter}</span>
+                    </div>
+                </Link>
+
             </nav>
         </header>
     );
