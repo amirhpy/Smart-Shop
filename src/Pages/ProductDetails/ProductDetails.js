@@ -12,6 +12,7 @@ import PaginationShop from '../../Components/shared/PaginationShop';
 import { RxArrowUp } from 'react-icons/rx'
 import { RxArrowDown } from 'react-icons/rx'
 import { BsBasket } from 'react-icons/bs'
+import { HiOutlineTrash } from 'react-icons/hi'
 
 // Function
 import { isInCart, quantityCount } from '../../function/helper';
@@ -70,7 +71,7 @@ const ProductDetails = (props) => {
                                                             </div>
                                                             :
                                                             <div className='counter-down' onClick={() => dispatch({ type: 'REMOVE_ITEM', payload: mainProduct })}>
-                                                                <RxArrowDown />
+                                                                <HiOutlineTrash />
                                                             </div>
                                                     }
                                                 </div>
