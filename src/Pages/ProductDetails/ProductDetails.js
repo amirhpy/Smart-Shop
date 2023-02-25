@@ -63,7 +63,11 @@ const ProductDetails = (props) => {
                                                             </div>
 
                                                     }
-                                                    <p className='counter-show'>{state.itemsCounter}</p>
+                                                    <p className='counter-show'>
+                                                        {
+                                                            quantityCount(state, mainProduct.id) ? <span>{quantityCount(state, mainProduct.id)}</span> : <span>0</span>
+                                                        }
+                                                    </p>
                                                     {
                                                         quantityCount(state, mainProduct.id) ?
                                                             <div className='counter-down' onClick={() => dispatch({ type: 'DECREASE', payload: mainProduct })}>
