@@ -41,7 +41,7 @@ const Cart = (props) => {
                 {
                     props.quantity === 1 &&
                     <div className='counter-down' onClick={() => dispatch({ type: 'REMOVE_ITEM', payload: props })}>
-                        <HiOutlineTrash />
+                        <HiOutlineTrash onClick={() => dispatch({ type: 'REMOVE_ITEM', payload: props })} />
                     </div>
                 }
             </div>
