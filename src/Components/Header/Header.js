@@ -41,7 +41,7 @@ const Header = () => {
                     </a>
                 </div>
                 <HamburgerMenu isScroll={isScroll} />
-                <Link to='/carts'>
+                <Link to='/carts' className='desktop__link-cart'>
                     <div className='header__basket'>
                         <BsBasket />
                         <span className='basket__item-counter'>{state.itemsCounter}</span>

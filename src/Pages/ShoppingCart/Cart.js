@@ -3,15 +3,14 @@ import React, { useContext } from 'react';
 // Context
 import { cartContext } from '../../Contexts/CartContextProvider'
 
-import { quantityCount } from '../../function/helper'
-
 // React Icon
 import { HiOutlineTrash } from 'react-icons/hi'
 import { RxArrowUp } from 'react-icons/rx'
 import { RxArrowDown } from 'react-icons/rx'
 
 const Cart = (props) => {
-    const { state, dispatch } = useContext(cartContext)
+    console.log(props)
+    const { dispatch } = useContext(cartContext)
     return (
         <div className='table__items'>
             <div>
@@ -34,13 +33,13 @@ const Cart = (props) => {
                         </div>
                 } */}
                 {
-                    quantityCount(state, props.id) > 1 &&
+                    props.quantity > 1 &&
                     <div className='counter-down' onClick={() => dispatch({ type: 'DECREASE', payload: props })}>
                         <RxArrowDown />
                     </div>
                 }
                 {
-                    quantityCount(state, props.id) === 1 &&
+                    props.quantity === 1 &&
                     <div className='counter-down' onClick={() => dispatch({ type: 'REMOVE_ITEM', payload: props })}>
                         <HiOutlineTrash />
                     </div>

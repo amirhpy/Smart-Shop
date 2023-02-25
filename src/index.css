@@ -154,7 +154,7 @@ body {
 }
 
 .header-scroll {
-  background-color: #fff;
+  background-color: #fff !important;
   padding: 2.2rem;
   box-shadow: 0 0 4rem rgb(0 0 0 / 15%);
 }
@@ -641,7 +641,7 @@ body {
   background: linear-gradient(145deg, #363636, #363636);
   box-shadow: 20px 20px 60px #d3d3d3,
     -20px -20px 0 #ededed;
-  height: 9rem;
+  padding: 4.5rem 0;
 }
 
 .shop__product {
@@ -844,7 +844,7 @@ body {
 
 .shopping__cart {
   padding: 9.4rem 0 7.5rem;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .table__items {
@@ -947,6 +947,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .header {
+    padding: 2.5rem 0;
+  }
   .header__menu {
     width: 100%;
     top: 100%;
@@ -983,6 +986,10 @@ body {
 
   .nav__toggle-icon {
     display: flex;
+  }
+
+  .desktop__link-cart {
+    display: none;
   }
 
   .about_product {
