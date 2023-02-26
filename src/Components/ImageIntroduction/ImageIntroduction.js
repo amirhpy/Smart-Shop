@@ -8,7 +8,7 @@ import ImgLaptop from '../../assets/image/laptopAI.jpg'
 
 const ImageIntroduction = () => {
     return (
-        <div className='image__introduction'>
+        <section className='image__introduction'>
             <div className='container'>
                 <div className='image__introduction-heading'>
                     <AboutProduct
@@ -21,7 +21,7 @@ const ImageIntroduction = () => {
                     <img src={ImgLaptop} alt='laptop' className='introduction__img' />
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

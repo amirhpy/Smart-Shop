@@ -8,7 +8,7 @@ import AboutProduct from '../shared/AboutProduct';
 
 const Gallery = () => {
     return (
-        <div className='gallery'>
+        <section className='gallery'>
             <div className='container'>
                 <div style={{ textAlign: 'center' }}>
                     <AboutProduct
@@ -19,7 +19,7 @@ const Gallery = () => {
                 </div>
                 <GallerySlider />
             </div>
-        </div>
+        </section>
     );
 };
 

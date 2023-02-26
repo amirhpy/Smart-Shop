@@ -6,12 +6,12 @@ import SmartProperty from './SmartProperty';
 
 const Features = () => {
     return (
-        <div className='features'>
+        <section className='features'>
             <div className='container'>
                 <SplendidFeatures />
                 <SmartProperty />
             </div>
-        </div>
+        </section>
     );
 };
 

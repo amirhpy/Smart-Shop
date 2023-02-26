@@ -6,7 +6,7 @@ import smartReview from '../../assets/image/smartobject.png'
 
 const HeaderMain = () => {
     return (
-        <div className='header__main'>
+        <section className='header__main'>
             <img src={circle} alt='shape' className='main__circle-left' />
             <div className='container'>
                 <div className='row'>
@@ -25,7 +25,7 @@ const HeaderMain = () => {
                 </div>
             </div>
             <img src={circle} alt='shape' className='main__circle-right' />
-        </div>
+        </section>
     );
 };
 

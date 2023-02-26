@@ -18,7 +18,7 @@ const Review = () => {
         { id: 3, brand: 'WRIST BAND', name: 'Golden Sunset', price: '$25.99', classColor: 'review__product-name golden-sunset', img: goldenSunset },
     ])
     return (
-        <div className='review'>
+        <section className='review'>
             <div className='container'>
                 <div className='review__heading'>
                     <AboutProduct
@@ -32,7 +32,7 @@ const Review = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
