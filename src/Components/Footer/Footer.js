@@ -56,7 +56,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <span className='footer__copyright'>Copyright © {date.getFullYear()} JevelinTheme - Theme by Shufflehound</span>
+            <span className='footer__copyright'>{date.getFullYear()} - Code With Amir ❤️</span>
         </footer>
     );
 };
